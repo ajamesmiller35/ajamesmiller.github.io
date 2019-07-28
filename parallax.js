@@ -1,16 +1,5 @@
 $(document).ready(function(){
 
-console.log('window width: ' + $(window).width());
-console.log('baby image width: ' + $('#bw-baby-img2').width());
-
-var marginLeft = $(window).width() - $('#bw-baby-img2').width();
-
-marginLeft = marginLeft/2;
-
-console.log('marginLeft: ' + marginLeft);
-
-$('#bw-baby-img2').css('margin-left', marginLeft/2); 
-
 var babyWindow = $(window).width() * (700/1663);
 
 if(babyWindow < 408){
@@ -30,6 +19,11 @@ var marginAdjustor = (babyWindow/700);
 
 var topOffset = $('#family').offset().top;
 
+var marginLeft = $(window).width() - $('#bw-baby-img2').width();
+
+marginLeft = marginLeft/2;
+
+$('#bw-baby-img2').css('margin-left', marginLeft); 
 
 $(window).scroll(function(){
     

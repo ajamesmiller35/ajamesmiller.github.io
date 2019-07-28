@@ -17,6 +17,8 @@ $(document).ready(function(){
     
     $('.window').css('height', windowHeight);
     $('.service-icon').css('height', rowHeight20 * 1.4);
+    $('#form-extra').addClass('col-md-8');
+    $('#form-extra').removeClass('col-md-12');
     
     }
     else{

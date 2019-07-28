@@ -39,12 +39,16 @@ body{
         top: unset;
         margin-left: auto;
         margin-right: auto;
-        width: 25%;
+        width: 100%;
 	}
 }
 
 #slogan{
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -52,7 +56,6 @@ body{
     color: #01a0a3;
     background-color: white;
     padding-bottom: 2em;
-    margin-block-end: 0 !important;
     position: fixed;
 }
 
@@ -101,8 +104,7 @@ body{
 }
 
 .ATS{
-    
-    margin-left: 1em;
+    margin-left: .5em;
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
     font-size: 2em;
@@ -230,6 +232,12 @@ h1{
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 768px){
+	.about-window {
+        background-image: url('images/checker-skinny-faded.png');
+	}
+}
+
 .row-max-width{
     display: flex;
     flex-wrap: wrap;
@@ -264,10 +272,36 @@ h1{
     margin-top: 1em;
 }
 
-#footer-info{
+.footer-box{
     
 }
 
+#fb-icon{
+    float: left;
+    width: 20%;
+    max-width: 150px;
+
+}
+
+#fb-icon-pic{
+    width: 100%;
+}
+
+#mail-icon{
+    float: right;
+    width: 20%;
+    max-width: 150px;
+}
+
+#mail-icon-pic{
+    width: 100%;
+}
+
+#footer-text{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .stork-footer{
