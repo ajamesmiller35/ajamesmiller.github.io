@@ -152,56 +152,56 @@
       <div class="col-lg-12">
         <h2 class="info-title">Tell us about yourself:</h2>
         <h5 class="contact-call">Let's work together to decide which services are right for you and your family!</h5>
-        <form id="contact-form">
+        <form action="generate-mail.php" method="POST" id="contact-form">
             <div class="form-row">
                 <div class="col">
                   <label for="first-name">First Name</label>
-                  <input type="text" class="form-control" id="first-name" placeholder="First name">
+                  <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First name">
                 </div>
                 <div class="col">
                   <label for="last-name">Last Name</label>
-                  <input type="text" class="form-control" id="last-name" placeholder="Last name">
+                  <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last name">
                 </div>
               </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">Phone Number</label>
-              <input type="tel" class="form-control" id="inputphone4" placeholder="(XXX)XXX-XXXX">
+              <input type="tel" class="form-control" id="inputphone4" name="phone" placeholder="(XXX)XXX-XXXX">
             </div>
           </div>
           <div class="form-group">
             <label for="inputAddress">What address you desire service for?</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
+              <input type="text" class="form-control" name="city" id="inputCity">
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
+              <select name="state" id="inputState" class="form-control">
                 <option selected>Choose...</option>
                 <option>...</option>
               </select>
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
+              <input type="text" name="zip" class="form-control" id="inputZip">
             </div>
           </div>
             <div class="form-row">
                 <div class="form-group col-lg-4">
                     <label for="date-selector">Baby's Due Date? (Leave Blank if Not Applicable)</label>
-                    <input type="date" class="form-control" id="date-selector" name="bdaytime">
+                    <input type="date" class="form-control" id="date-selector" name="due-date">
                 </div>
             <div class="form-group col-lg-4">
                 <label for="inlineFormCustomSelect">How many babies do you need assistance with?</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <select name="baby-number" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                   <option selected>Choose...</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
@@ -210,7 +210,7 @@
             </div>
           <div class="form-group col-lg-4">
               <label for="inlineFormCustomSelect">How many days per week do you need help?</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <select name="days" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                 <option selected>Choose...</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -225,7 +225,7 @@
         <div class="form-row">
         <div class="form-group col-md-12" id="form-extra">
             <label for="exampleFormControlTextarea1">Anything else we should know?</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea name="extra" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </div>
           <button type="submit" class="btn submit-button btn-primary">Send!</button>
