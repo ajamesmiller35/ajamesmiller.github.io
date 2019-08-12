@@ -1,15 +1,20 @@
 $(document).ready(function(){
 
+
+//set height of display window for parallax images
 var babyWindow = $(window).width() * (700/1663);
 
+//set minimum height of display window for parallax images to 408 px
 if(babyWindow < 408){
     babyWindow = 408;
+
 }
 
 //var imgReposition = $('#bw-baby-img2').height() - babyWindow;
 
-var imgReposition = babyWindow - $('#bw-baby-img2').height();
 
+//move the image inside the window down so the bottom-most portion of the image is visible in the window 
+var imgReposition = babyWindow - $('#bw-baby-img2').height();
 $('#bw-baby-img2').css('margin-top', imgReposition);
 
 $('#bw-baby').css('height', babyWindow);
@@ -17,6 +22,7 @@ $('#family').css('height', babyWindow);
 
 var marginAdjustor = (babyWindow/700);
 
+//get the distance from the #family display window to the top of the page
 var topOffset = $('#family').offset().top;
 
 var marginLeft = $(window).width() - $('#bw-baby-img2').width();
@@ -34,13 +40,17 @@ $(window).scroll(function(){
     var textMargin = (babyWindow/2) - (textHeight/2);
 
     var offset = -((1 - distance/windowHeight)/2);
-    var offset2 = -((1 - distance/windowHeight)/2);
+    //var offset2 = -((1 - distance/windowHeight)/2);
 
     $('#bw-baby-img').css('margin-top', (offset * 409 * marginAdjustor));
     
     if((distance + $(window).height()) >= (topOffset)){
-        $('#bw-baby-img2').css('margin-top', imgReposition + (offset2 * 409 * marginAdjustor));
-        console.log('value: ' + (offset2 * 409 * marginAdjustor));
+         if(babyWindow > 408){
+             $('#bw-baby-img2').css('margin-top', imgReposition + (offset * 409 * marginAdjustor));
+         }
+         else{
+            $('#bw-baby-img2').css('margin-top', (imgReposition + (offset * 409 * marginAdjustor) - 100));
+         }
     }
     
 
