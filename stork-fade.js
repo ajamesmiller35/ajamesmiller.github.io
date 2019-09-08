@@ -6,5 +6,6 @@
         //console.log(ratio);
         $('#ats-main').css('opacity', (1-ratio));
         $('#slogan').css('opacity', (1-ratio));
+        $('#down-arrow').css('opacity', (1-ratio));
 
     });

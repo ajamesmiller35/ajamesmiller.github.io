@@ -21,14 +21,9 @@ body{
     line-height: 1 !important;
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .5);
     z-index: 9999;
-}
 
-@media only screen and (max-width: 992px){
-    .top-bar{
-        background-color: rgba(255, 255, 255, .9);
-    }
 }
 
 #fixed-nav{
@@ -60,13 +55,20 @@ body{
     font-size: 3em;
     color: #01a0a3;
     background-color: white;
-    padding-bottom: 2em;
     position: fixed;
 }
 
+#top-slogan{
+    
+}
+
+.action-stmt{
+    color: black;
+}
+
 @media only screen and (max-width: 768px){
-	#slogan {
-        font-size: 2em;
+	#top-slogan {
+        
 	}
 }
 
@@ -85,17 +87,25 @@ body{
     z-index: -2;
 }
 
+#down-arrow{
+    width: 10%;
+    display: block;
+    left: 45%;
+    position: fixed;
+    z-index: -1;
+}
+
 @media only screen and (max-width: 1200px){
 	#ats-main {
-        width: 75%;
-        left: 12.5%;
+        width: 65%;
+        left: 17.5%;
 	}
 }
 
 @media only screen and (max-width: 992px){
 	#ats-main {
-        width: 100%;
-        left: 0;
+        width: 80%;
+        left: 10%;
 	}
 }
 
@@ -151,7 +161,7 @@ h1{
 }
 
 #bw-baby-img2{
-    width: 100%;
+    width: 101%;
     margin-top: 0px;
     position: relative;
     min-height: 700px;
@@ -162,7 +172,7 @@ h1{
     font-family: 'Raleway', sans-serif;
     position: absolute;
     z-index: 5;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 500;
     text-align: center;
     width: 100%;
@@ -173,7 +183,7 @@ h1{
     font-family: 'Raleway', sans-serif;
     position: absolute;
     z-index: 5;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 500;
     text-align: center;
     width: 100%;
@@ -184,6 +194,7 @@ h1{
     width: 100%;
     text-align: center;
     padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .service-icon{
@@ -206,6 +217,14 @@ h1{
 
 .grey{
     background-color: #c9c9c9;
+}
+
+.teal{
+    background-color: #01a0a3;
+}
+
+.text-white{
+    color: white;
 }
 
 .contact-call{
@@ -308,6 +327,47 @@ h1{
     margin-right: auto;
 }
 
+#gc1{
+    width: 100%;
+    
+}
+
+#gc2{
+    width: 100%;
+    
+}
+
+.testimonial{
+    font-size: 1.25em;
+}
+
+.testimonial-top{
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 1700px){
+    .testimonial{
+        font-size: 1.15em;
+    }
+}
+
+@media only screen and (max-width: 1575px){
+    .testimonial{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .testimonial{
+        font-size: .75em;
+    }
+}
+
+@media only screen and (max-width: 1092px){
+    .testimonial{
+        font-size: 1em;
+    }
+}
 
 .stork-footer{
     /*background-image: url('images/footer-stork.png');

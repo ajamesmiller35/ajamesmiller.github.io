@@ -20,7 +20,7 @@
       <img id="ats-main" src="images/ats-final.png"/>
     
       
-      <div class="top-bar" id="top-bar">
+      <div class="top-bar">
         <div class="ATS">
           <p>ATS</p>
         </div>
@@ -35,16 +35,19 @@
                       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto">
                           <li class="nav-item collapse-me">
-                            <a class="nav-link scrollTo" href="#home">Home</a>
+                            <a id="home-link" class="nav-link scrollTo" href="#home">Home</a>
                           </li>
                           <li class="nav-item collapse-me">
-                            <a class="nav-link scrollTo" href="#about-us">About Us</a>
+                            <a id="about-us-link" class="nav-link scrollTo" href="#about-us">About Us</a>
                           </li>
                           <li class="nav-item collapse-me">
-                            <a class="nav-link scrollTo" href="#services">Services</a>
+                            <a id="services-link" class="nav-link scrollTo" href="#services">Services</a>
                           </li>
                           <li class="nav-item collapse-me">
-                            <a class="nav-link scrollTo" href="#contact">Contact</a>
+                              <a id="rates-link" class="nav-link scrollTo" href="#rates">Rates</a>
+                            </li>
+                          <li class="nav-item collapse-me">
+                            <a id="contact-link" class="nav-link scrollTo" href="#contact">Contact</a>
                           </li>
                         </ul>
                       </div>
@@ -60,10 +63,15 @@
         </div><!--row-->
         <div id="slogan-row" class="row">
           <div class="col-lg-12">
-            <h3 id="slogan">Specializing in newborn care in the Denver metro area</h3>
+            <div id="slogan">
+            <!--<h3 id="slogan">Specializing in newborn care in the Denver metro area</h3>-->
+            <h3 id="top-slogan">Specializing in newborn care in the Denver metro area</h3>
+            <h4 class="action-stmt">Let us customize your transition from birth to final goals!</h4>
+          </div>
           </div><!--col-->
         </div><!--row-->
       </div><!--container-fluid---->
+      <div class="row"><img id="down-arrow" src="images/arrow.png"/></div>
         
           <div id="bw-baby">
             <h1 id="cap1">Ease your transition into parenthood!</h1>
@@ -78,13 +86,19 @@
             <p class="block">After the Stork has the experience, knowledge, support, and staff you need. We are a Denver based company that provides service to the Denver/Boulder metro area. We take great pride and care in the selection of our care providers. Each of our care providers are newborn professionals that have been trained and certified by me personally, and have extensive training and experience in infant care. Our staff is made up of CNA's, certified Nurses, and childcare professionals, all with a wealth of knowledge and experience available to you, regardless of which care provider you choose.</p>
             <p class="block">We provide overnight newborn care with a personal touch!  We will provide services customized by you during 10 hr. shifts through the night for up to 7 nights a week if needed!</p>
             <p class="block">I  personally have extensive experience in childcare ranging from raising 4 of my own, to daycare, special needs, newborn and infant care, to night nanny!  My methods are not experimental, but rather have been proven to work over and over again. I want new mothers to confidently step on the stones of experience that I have stumbled on!  I frequently hear new mothers say "I wish this baby came with an instruction manual".  Let me be your instruction manual! </p>
-            <p class="block">"Hiring Danette to care for our newborn baby was one of the best decisions we have ever made for our family. After a very hard pregnancy, we needed help and I needed to heal from my c-section. Danette was a loving, knowledgeable and wonderful presence in our lives. Her skill and care with our baby Sierra put us at ease right away. I am confident that had it not been for Danette, that my recovery would have taken much longer. With Danette the transition from one child to two was smooth and deeply enjoyable. I recommend her without reservation. Our family was so lucky to have her help to navigate those first difficult months."
-              This doesn't begin to cover how grateful we are to you.</p>
-            <p class="block">All the best,</p>
-            <p class="block">Dawn - After The Stork client</p>
           </div> 
           <div class="col-lg-1"></div> 
         </div><!--row-->
+        <div class="row teal text-white">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5"><img id="gc2" src="images/gc2.jpg"/></div>
+          <div class="col-lg-5"><p class="block testimonial-top testimonial">"Hiring Danette to care for our newborn baby was one of the best decisions we have ever made for our family. After a very hard pregnancy, we needed help and I needed to heal from my c-section. Danette was a loving, knowledgeable and wonderful presence in our lives. Her skill and care with our baby Sierra put us at ease right away. I am confident that had it not been for Danette, that my recovery would have taken much longer. With Danette the transition from one child to two was smooth and deeply enjoyable. I recommend her without reservation. Our family was so lucky to have her help to navigate those first difficult months.
+              This doesn't begin to cover how grateful we are to you.</p>
+            <p class="block testimonial">All the best,</p>
+            <p class="block testimonial">Dawn" - After The Stork client</p></div>
+            
+          <div class="col-lg-1"></div>
+        </div>
       </div><!--container-fluid-->
       
         <div id="family">
@@ -93,8 +107,8 @@
         </div>
       
     
-      <div class="window about-window">
-      <div id="services" class="row-max-width height-20">
+      <div class="window about-window" id="services">
+      <div class="row-max-width height-20">
           <div class="col-lg-1"></div>
           <div class="col-lg-10">
             <h2 class="info-title">Everything your growing family needs.</h2>
@@ -123,6 +137,17 @@
           </div>
           <div class="col-lg-2"></div>
       </div><!--row-->
+      <div class="row-max-width height-20">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
+          <img src="images/clock.png" alt="" class="service-icon">
+        </div>
+        <div class="col-lg-4">
+          <h3 class="service-title">Routine Development</h3>
+          <p class="service-info">The ultimate goal is to get your baby sleeping through the night.</p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div><!--row-->
         <div class="row-max-width height-20">
           <div class="col-lg-2"></div>
           <div class="col-lg-4">
@@ -130,7 +155,7 @@
           </div>
           <div class="col-lg-4">
             <h3 class="service-title">Laundry</h3>
-            <p class="service-info">At your request, we will wash and fold your baby's laundry!</p>
+            <p class="service-info">At your request, we will wash and fold your baby's laundry and even organize your nursery!</p>
           </div>
           <div class="col-lg-2"></div>
       </div><!--row-->
@@ -146,6 +171,24 @@
         <div class="col-lg-2"></div>
     </div><!--row-->
   </div><!--window-->
+
+      <div class="container-fluid" id="center-parent">
+          <div id="rates" class="row teal text-white">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5">
+                <div id="center">
+                <h2>Rates</h2>
+                <p class="block">Our rates are based on 10 hr. shifts from 9 pm to 7 am.</p>
+                <p class="block">This allows us to best interact with parents before they go to bed, as well as after they wake up in the morning.</p>
+                <strong class="block">Singleton:</strong><p class="block">$250 per night/$240 with pre-pay.</p>
+                <strong class="block">Twins:</strong><p class="block">$320 per night/$300 with pre-pay.</p>
+              </div><!--center-->
+              </div>
+                <div class="col-lg-5"><img id="gc1" src="images/gc1.jpg"/></div>
+              <div class="col-lg-1"></div>
+            </div>
+      </div><!--containter-fluid-->
+    
   
     <div class="window grey" id="contact">
         <div class="container-fluid">
@@ -243,6 +286,7 @@
               <div class="footer-box" id="footer-text">
             <h3 class="footer-header text-center">After The Stork</h3>
             <h6 class="footer-text text-center">Danette Brown</h6>
+            <h6 class="footer-text text-center">303-919-8841</h6>
             <h6 class="footer-text text-center">afterthestork@q.com</h6>
             <h6 class="footer-text text-center">References available upon request!</h6>
             </div>
@@ -258,12 +302,11 @@
     <script src="plugins/bootstrap/js/bootstrap.js"></script>
     <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
     <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
     <script src="stork-fade.js"></script>
     <script src="height-adjust.js"></script>
     <script src="parallax.js"></script>
     <script src="clickscroll.js"></script>
     <script src="collapse.js"></script>
-    <script>$(window).resize(function(){location.reload();});</script>
+    <script src="nav-location.js"></script>
   </body>
 </html>

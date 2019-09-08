@@ -1,26 +1,56 @@
-$(document).ready(function(){
+$(document).ready(assemble());
 
-    setInterval(function(){
+var thisHeight = $(window).height();
+var thisWidth = $(window).width();
 
-    //console.log('interval');
+
+setInterval(function(){
+    var newHeight = $(window).height();
+    var newWidth = $(window).width();
+
+    if(thisHeight != newHeight){
+        thisHeight = $(window).height();
+        assemble();
+        parallax();
+        //console.log('assemble: new height');
+    }
+    if(thisWidth != newWidth){
+        thisWidth = $(window).width();
+        assemble();
+        parallax();
+        //console.log('assemble: new width');
+    }
+}, 100);
+
+
+function assemble(){
 
     //var height = $('#ats-main').height() + $('.top-bar').height() + 100;
     var height = $(window).height();
     var width = $(window).width();
     var windowHeight = height - $('.top-bar').height();
-    var sloganHeight = height * .25 + $('#ats-main').height() + 50;
-    $('#ats-main').css('top', (height*.25));
+    var sloganHeight = height * .15 + $('#ats-main').height() + 25;
+    
+    //console.log(height);
+    $('#ats-main').css('top', (height*.15));
     $('#slogan').css('top', sloganHeight);
+    $('#down-arrow').css('top', windowHeight - 50);
 
     $('#push').css('height', height);
 
-    var rowHeight20 = $('.height-20').height();
+    if(width >= 1092){
+        var centerParentHeight = $('#center-parent').height();
+        var centerHeight = $('#center').height();
+        var centerMargin = (centerParentHeight - centerHeight)/2;
+        
+        $('#center').css('margin-top', centerMargin);
+    }
     
+    var rowHeight20 = $('.height-20').height();
 
     if(width >= 1200){
     
-    $('.window').css('height', windowHeight);
-    $('.service-icon').css('height', rowHeight20 * .9);
+    $('.service-icon').css('height', rowHeight20 * 1.4);
     $('#form-extra').addClass('col-md-8');
     $('#form-extra').removeClass('col-md-12');
     
@@ -28,8 +58,4 @@ $(document).ready(function(){
     else{
         $('.service-icon').css('height', rowHeight20);
     }
-    
-    
-    }, 100)
-
-});
+}
