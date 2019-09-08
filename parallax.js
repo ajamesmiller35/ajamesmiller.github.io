@@ -2,7 +2,7 @@ $(document).ready(parallax());
 
 function parallax(){
 
-    console.log('parallax');
+    var winRatio = $(window).width()/$(window).height();
 
     var babyWindow = $(window).width() * (700/1663);
 
@@ -12,7 +12,18 @@ function parallax(){
     
     //var imgReposition = $('#bw-baby-img2').height() - babyWindow;
     
-    var imgReposition = babyWindow - $('#bw-baby-img2').height();
+    if(winRatio <= 1.7 && winRatio > 1){
+        var imgReposition = babyWindow - $('#bw-baby-img2').height() - 100;
+        console.log('winRatio <=1.7');
+    }
+    else if(winRatio <= 1 && winRatio > .55){
+        var imgReposition = babyWindow - $('#bw-baby-img2').height() - 300;
+        console.log('winRatio <1');
+    }
+    else{
+        var imgReposition = babyWindow - $('#bw-baby-img2').height() - 50;
+        console.log('winRatio >');
+    }
     
     $('#bw-baby-img2').css('margin-top', imgReposition);
     
