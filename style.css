@@ -26,6 +26,11 @@ body{
 
 }
 
+.welcome-box{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 #fixed-nav{
     position: absolute !important;
     right: 25px;

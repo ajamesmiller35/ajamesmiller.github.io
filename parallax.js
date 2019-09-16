@@ -3,6 +3,7 @@ $(document).ready(parallax());
 function parallax(){
 
     var winRatio = $(window).width()/$(window).height();
+    var welcomeHeight = $('#welcome').height();
 
     var babyWindow = $(window).width() * (700/1663);
 
@@ -48,7 +49,7 @@ function parallax(){
     
         var textMargin = (babyWindow/2) - (textHeight/2);
     
-        var offset = -((1 - distance/windowHeight)/2);
+        var offset = -((1 - distance/(windowHeight + welcomeHeight))/2);
         var offset2 = -((1 - distance/windowHeight)/2);
     
         $('#bw-baby-img').css('margin-top', (offset * 409 * marginAdjustor));
