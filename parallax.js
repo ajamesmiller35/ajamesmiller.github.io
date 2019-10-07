@@ -23,21 +23,6 @@ function parallax(){
     
     //var imgReposition = $('#bw-baby-img2').height() - babyWindow;
     
-    if(winRatio <= 1.7 && winRatio > 1){
-        var imgReposition = babyWindow - $('#bw-baby-img2').height() - 100;
-        
-    }
-    else if(winRatio <= 1 && winRatio > .55){
-        var imgReposition = babyWindow - $('#bw-baby-img2').height() - 300;
-        
-    }
-    else{
-        var imgReposition = babyWindow - $('#bw-baby-img2').height() - 50;
-        
-    }
-    
-    $('#bw-baby-img2').css('margin-top', imgReposition);
-    
     $('#bw-baby').css('height', babyWindow);
     $('#family').css('height', babyWindow);
     
@@ -61,17 +46,29 @@ function parallax(){
     
         var offset = -((1 - distance/(windowHeight + welcomeHeight))/2);
         var offset2 = -((1 - distance/windowHeight)/2);
+
+        if(winRatio <= 1.7 && winRatio > 1){
+            var imgReposition = babyWindow - $('#bw-baby-img2').height() - 100;
+            console.log('repostion if' + imgReposition);
+            
+        }
+        else if(winRatio <= 1 && winRatio > .55){
+            var imgReposition = babyWindow - $('#bw-baby-img2').height() - 75;
+            console.log('repostion else if' + imgReposition);
+            
+        }
+        else{
+            var imgReposition = babyWindow - $('#bw-baby-img2').height() - 50;
+            console.log('repostion else' + imgReposition);
+            
+        }
     
+        $('#bw-baby-img2').css('margin-top', imgReposition);
+
         $('#bw-baby-img').css('margin-top', (offset * 409 * marginAdjustor));
-        
-        /*if((distance + $(window).height()) >= (topOffset)){
-            $('#bw-baby-img2').css('margin-top', imgReposition + (offset2 * 409 * marginAdjustor));
-        }*/
 
         if((distance + $(window).height()) >= (topOffset)){
             $('#bw-baby-img2').css('margin-top', imgReposition + (offset2 * 409 * marginAdjustor));
-            console.log(distance + $(window).height());
-            console.log(topOffset);
         }
         
     
