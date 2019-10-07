@@ -21,7 +21,7 @@ body{
     line-height: 1 !important;
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .9);
     z-index: 9999;
 
 }
@@ -390,4 +390,8 @@ h1{
 table{
     height: 100%;
     vertical-align: middle;
+}
+
+.active{
+    font-size: 1.1em !important;
 }
