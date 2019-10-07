@@ -1,3 +1,13 @@
+$.fn.inView = function() {
+
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+}
+
 $(document).ready(parallax());
 
 function parallax(){
@@ -15,15 +25,15 @@ function parallax(){
     
     if(winRatio <= 1.7 && winRatio > 1){
         var imgReposition = babyWindow - $('#bw-baby-img2').height() - 100;
-        console.log('winRatio <=1.7');
+        
     }
     else if(winRatio <= 1 && winRatio > .55){
         var imgReposition = babyWindow - $('#bw-baby-img2').height() - 300;
-        console.log('winRatio <1');
+        
     }
     else{
         var imgReposition = babyWindow - $('#bw-baby-img2').height() - 50;
-        console.log('winRatio >');
+        
     }
     
     $('#bw-baby-img2').css('margin-top', imgReposition);
@@ -54,8 +64,14 @@ function parallax(){
     
         $('#bw-baby-img').css('margin-top', (offset * 409 * marginAdjustor));
         
+        /*if((distance + $(window).height()) >= (topOffset)){
+            $('#bw-baby-img2').css('margin-top', imgReposition + (offset2 * 409 * marginAdjustor));
+        }*/
+
         if((distance + $(window).height()) >= (topOffset)){
             $('#bw-baby-img2').css('margin-top', imgReposition + (offset2 * 409 * marginAdjustor));
+            console.log(distance + $(window).height());
+            console.log(topOffset);
         }
         
     
