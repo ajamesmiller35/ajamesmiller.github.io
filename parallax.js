@@ -1,12 +1,3 @@
-$.fn.inView = function() {
-
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-    
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-}
 
 $(document).ready(parallax());
 
@@ -20,8 +11,6 @@ function parallax(){
     if(babyWindow < 408){
         babyWindow = 408;
     }
-    
-    //var imgReposition = $('#bw-baby-img2').height() - babyWindow;
     
     $('#bw-baby').css('height', babyWindow);
     $('#family').css('height', babyWindow);
@@ -49,17 +38,13 @@ function parallax(){
 
         if(winRatio <= 1.7 && winRatio > 1){
             var imgReposition = babyWindow - $('#bw-baby-img2').height() - 100;
-            console.log('repostion if' + imgReposition);
-            
         }
         else if(winRatio <= 1 && winRatio > .55){
             var imgReposition = babyWindow - $('#bw-baby-img2').height() - 75;
-            console.log('repostion else if' + imgReposition);
             
         }
         else{
             var imgReposition = babyWindow - $('#bw-baby-img2').height() - 50;
-            console.log('repostion else' + imgReposition);
             
         }
     
