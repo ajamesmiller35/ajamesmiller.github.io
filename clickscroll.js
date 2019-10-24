@@ -9,10 +9,21 @@
          $('.scrollTo').on('click', function(e) {
              e.preventDefault();
              var target = $(this).attr('href');
-             $('html, body').animate({
-               scrollTop: ($(target).offset().top - $("#top-nav").height())
-             }, 1000);
-             console.log('height:' + $('#top-nav').height());
+
+              if($(window).width() < 1091){
+                $('html, body').animate({
+                  scrollTop: ($(target).offset().top - 64)
+                }, 1000);
+                console.log('top bar:' + $('.top-bar').height());
+              }
+              else{
+                $('html, body').animate({
+                  scrollTop: ($(target).offset().top - $("#top-nav").height() - 64)
+                }, 1000);
+                console.log('height:' + $('#top-nav').height());
+              }
+
+             
           });
   
           $('#top').on('click', function(e) {

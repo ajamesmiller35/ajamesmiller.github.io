@@ -247,6 +247,12 @@ h1{
     margin-top: 2em;
 }
 
+.submit-button:hover{
+    background-color: white;
+    border-color: #01a0a3;
+    color: #01a0a3;
+}
+
 .window{
     padding-bottom: 50px;
 }
