@@ -38,6 +38,15 @@ function assemble(){
 
     $('#push').css('height', height);
 
+    if(width < 411){
+        $('#slogan').css('top', sloganHeight * .7);
+        $('#top-slogan').css('font-size', '.4em');
+        $('.action-stmt').css('font-size', '.35em');
+        $('#ats-main').css('margin-top', '25px');
+        $('#down-arrow').css('top', windowHeight - 20);
+        console.log('*.5');
+    }
+
     if(width >= 1092){
         var centerParentHeight = $('#center-parent').height();
         var centerHeight = $('#center').height();
@@ -45,9 +54,9 @@ function assemble(){
         
         $('#center').css('margin-top', centerMargin);
     }
-    
-    var rowHeight20 = $('.height-20').height();
 
+    var rowHeight20 = $('.height-20').height();
+    
     if(width >= 1200){
     
     $('.service-icon').css('height', rowHeight20 * 1.4);

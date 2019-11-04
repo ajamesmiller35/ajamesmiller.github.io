@@ -151,11 +151,11 @@ h1{
 }
 
 #bw-baby-img{
-    width: 100%;
+    width: 101%;
     margin-top: 0px;
     position: relative;
-    min-height: 500px;
-    min-width: 749px;
+    min-height: 700px;
+    min-width: 1000px;
 }
 
 #family{
@@ -193,6 +193,15 @@ h1{
     text-align: center;
     width: 100%;
     padding-top: 0px !important;
+}
+
+@media only screen and (max-width: 321px){
+    #cap1{
+        font-size: 2em;
+    }
+    #cap2{
+        font-size: 2em;
+    }
 }
 
 .info-title{

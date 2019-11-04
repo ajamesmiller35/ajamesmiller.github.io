@@ -1,9 +1,18 @@
+$.fn.inView = function() {
+
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+}
 
 $(document).ready(parallax());
 
 function parallax(){
 
-    var winRatio = $(window).width()/$(window).height();
+    //var winRatio = $(window).width()/$(window).height();
     var welcomeHeight = $('#welcome').height();
 
     var babyWindow = $(window).width() * (700/1663);
@@ -17,12 +26,9 @@ function parallax(){
     
     var marginAdjustor = (babyWindow/700);
     
-    var topOffset = $('#family').offset().top;
+    //var topOffset = $('#family').offset().top;
     
-    var marginLeft = $(window).width() - $('#bw-baby-img2').width();
-    
-    marginLeft = marginLeft/2;
-    
+    var marginLeft = ($(window).width() - $('#bw-baby-img2').width())/2;    
     $('#bw-baby-img2').css('margin-left', marginLeft); 
 
     $(window).scroll(function(){
@@ -33,27 +39,23 @@ function parallax(){
     
         var textMargin = (babyWindow/2) - (textHeight/2);
     
-        var offset = -((1 - distance/(windowHeight + welcomeHeight))/2);
-        var offset2 = -((1 - distance/windowHeight)/2);
-
-        if(winRatio <= 1.7 && winRatio > 1){
-            var imgReposition = babyWindow - $('#bw-baby-img2').height() - 100;
-        }
-        else if(winRatio <= 1 && winRatio > .55){
-            var imgReposition = babyWindow - $('#bw-baby-img2').height() - 75;
-            
-        }
-        else{
-            var imgReposition = babyWindow - $('#bw-baby-img2').height() - 50;
-            
-        }
+        //var offset = -((1 - distance/(windowHeight + welcomeHeight))/2);
+        //var offset2 = -((1 - distance/windowHeight)/2);
     
-        $('#bw-baby-img2').css('margin-top', imgReposition);
+        //$('#bw-baby-img2').css('margin-top', imgReposition);
 
-        $('#bw-baby-img').css('margin-top', (offset * 409 * marginAdjustor));
+        //$('#bw-baby-img').css('margin-top', (offset * 409 * marginAdjustor));
 
-        if((distance + $(window).height()) >= (topOffset)){
-            $('#bw-baby-img2').css('margin-top', imgReposition + (offset2 * 409 * marginAdjustor));
+        if($('#bw-baby').inView()){
+            console.log('TOP: ' + $('#bw-baby-img2').offset().top);
+            let diff = $('#bw-baby').offset().top - windowHeight - $(window).scrollTop();
+            $('#bw-baby-img').css('margin-top', diff * .15);
+        }
+
+        if($('#family').inView()){
+            console.log('TOP: ' + $('#bw-baby-img2').offset().top);
+            let diff = $('#family').offset().top - windowHeight - $(window).scrollTop();
+            $('#bw-baby-img2').css('margin-top', diff * .15);
         }
         
     
