@@ -30,6 +30,8 @@ function parallax(){
     
     var marginLeft = ($(window).width() - $('#bw-baby-img2').width())/2;    
     $('#bw-baby-img2').css('margin-left', marginLeft); 
+    //$('#bw-baby-img').css('margin-left', marginLeft); 
+
 
     $(window).scroll(function(){
         

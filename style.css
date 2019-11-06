@@ -63,23 +63,12 @@ body{
     position: fixed;
 }
 
-#top-slogan{
-    
-}
-
 .action-stmt{
     color: black;
 }
 
-@media only screen and (max-width: 768px){
-	#top-slogan {
-        
-	}
-}
-
 #slogan-row{
     z-index: 100;
-    /*margin-top: 790px;*/
 }
 
 
@@ -121,6 +110,13 @@ body{
     margin-left: 1em;
     color: black;
     padding-top: .25em;
+}
+
+@media only screen and (max-width: 1090px){
+	.nav-item {
+        padding-top: .5em;
+        padding-bottom: .5em;
+	}
 }
 
 .ATS{
@@ -182,6 +178,7 @@ h1{
     text-align: center;
     width: 100%;
     padding-top: 0px !important;
+    text-shadow: 0px 0px 20px white;
 }
 
 #cap2{
@@ -193,6 +190,7 @@ h1{
     text-align: center;
     width: 100%;
     padding-top: 0px !important;
+    text-shadow: 0px 0px 20px white;
 }
 
 @media only screen and (max-width: 321px){
@@ -226,7 +224,7 @@ h1{
 }
 
 .service-info{
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .grey{
@@ -271,14 +269,14 @@ h1{
 }
 
 .about-window{
-    background-image: url('images/checker-pattern-faded.png');
+    background-image: url('images/checker-pattern-faded.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 768px){
 	.about-window {
-        background-image: url('images/checker-skinny-faded.png');
+        background-image: url('images/checker-skinny-faded.jpg');
 	}
 }
 
@@ -288,7 +286,7 @@ h1{
 }
 
 #contact{
-    background-image: url('images/footer-stork.png');
+    background-image: url('images/footer-stork.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -365,30 +363,6 @@ h1{
     margin-top: 1em;
 }
 
-@media only screen and (max-width: 1700px){
-    .testimonial{
-        font-size: 1.15em;
-    }
-}
-
-@media only screen and (max-width: 1575px){
-    .testimonial{
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width: 1280px){
-    .testimonial{
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width: 1092px){
-    .testimonial{
-        font-size: 1em;
-    }
-}
-
 .block-end{
     margin-bottom: 2em;
 }
@@ -409,4 +383,30 @@ table{
 
 .active{
     font-size: 1.1em !important;
+}
+
+#mask{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.block{
+    font-size: 1.25em;
+}
+
+form{
+    font-size: 1.25em;
+}
+
+.form-control{
+    font-size: 1em;
+}
+
+.custom-select{
+    font-size: 1em;
+}
+
+.btn{
+    font-size: 1.5em;
 }
