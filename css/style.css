@@ -1,0 +1,347 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hidden{
+    display: none;
+}
+
+/*-----FONTS-----*/
+@font-face{
+    font-family: "HN";
+    src: url('../fonts/helveticaneue/HelveticaNeue.ttf');
+}
+
+@font-face{
+    font-family: "HN Med";
+    src: url('../fonts/helveticaneue/HelveticaNeue\ Medium.ttf');
+}
+
+@font-face{
+    font-family: "HN Italic";
+    src: url('../fonts/helveticaneue/HelveticaNeueIt.ttf');
+}
+
+@font-face{
+    font-family: "HN Bold";
+    src: url('../fonts/helveticaneue/HelveticaNeueBd.ttf');
+}
+
+/*-----LINKS-----*/
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover{
+    text-decoration: none;
+    color: unset;
+}
+
+/*-----COLORS-----*/
+.background-grey{
+    background-color: #524B48;
+    width: 100%;
+}
+
+.background-green{
+    background-color: #647456;
+    width: 100%;
+}
+
+.text-blue{
+    color:  #277289;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-light-grey{
+    color: #88817f
+}
+
+/*-----NAV-----*/
+#nav-box{
+    background-color: #647456;
+    height: 50px;
+    position: relative;
+    z-index: 999;
+}
+
+#nav-table{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.nav-tr{
+    width: 100%;
+}
+
+#nav-table td{
+    width: 25%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-family: 'HN Med';
+    color: white;
+}
+
+@media only screen and (min-width: 575px){
+    .nav-td:hover{
+        background-color: rgba(255, 255, 255, .3);
+    }
+}
+
+.here{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.nav-td a{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'HN Med';
+    color: white;
+    margin-top: 10px;
+}
+
+.nav-td a h4{
+    margin-bottom: 0;
+    padding-top: 10px;
+    height: 100%;
+}
+
+.nav-icon{
+    width: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 992px){
+    .nav-td h4{
+        font-size: 1em;
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #nav-box{
+        height: 75px;
+    }
+    #nav-table{
+        width: 100%;
+    }
+    .nav-td a h4{
+        font-size: .75em;
+        padding-top: 5px;
+    }
+}
+
+/*-----INDEX-----*/
+
+#index-backdrop{
+    background-image: url('../images/f1-lg-2.jpg');
+    background-size: 100%;
+}
+
+@media only screen and (max-width: 1660px){
+    #index-backdrop{
+        background-image: url('../images/f1-lg.jpg');
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 802px){
+    #index-backdrop{
+        background-image: url('../images/f1-sm.jpg');
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #index-backdrop{
+        background-image: url('../images/f1-xsm.jpg');
+        background-size: 100%;
+    }
+}
+
+#content-index{
+    position: relative;
+    z-index: 998;
+}
+
+#title-box{
+    position: absolute;
+    z-index: 999;
+    left: 15%;
+}
+
+#title-log0{
+    width: 400px;
+}
+
+#index-backdrop{
+    height: 500px;
+}
+
+#frp-h1{
+    color: white;
+    font-family: 'HN Bold';
+    padding: 1em 0 .5em 0;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#experience{
+    color: white;
+}
+
+#experience li{
+    padding: .5em .5em .5em 2em;
+}
+
+#experience li::before {
+    content: "\2022";
+    color: #534b49;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    float: left;
+    width: .75em;
+}
+
+@media only screen and (max-width: 1200px){
+    #frp-h1{
+        font-size: 2em;
+    }
+    #experience li h3{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #frp-h1{
+        font-size: 1.25em;
+    }
+    #experience li h3{
+        font-size: 1em;
+    }
+}
+
+#index-fade{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+.arch{
+    z-index: 100;
+    background-image: url('../images/arch.png');
+    background-size: 100% 100%;
+    height: 75px;
+    margin-top: -75px;
+}
+
+#slogan{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 802px){
+    #slogan{
+        font-size: 1.5em;
+    }
+    .arch{
+        height: 40px;
+        margin-top: -40px;
+    }
+}
+
+#name-box{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#name{
+    font-size: 2.25em;
+    font-family: 'HN Bold';
+    color: #277289;
+    border-top: 2px solid #277289;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+#title{
+    font-family: 'HN Med';
+    font-size: 1.25em;
+    margin-bottom: .25em;
+    white-space: nowrap;
+}
+
+#education{
+    font-family: 'HN Bold';
+    font-size: 1.25em;
+    margin-bottom: .25em;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1500px){
+    #name{
+        font-size: 2em;
+    }
+    #title, #education{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 1170px){
+    #name{
+        font-size: 1.75em;
+    }
+    #title, #education{
+        font-size: .75em;
+    }
+}
+@media only screen and (max-width: 1025px){
+    #name{
+        font-size: 1.5em;
+    }
+    #title, #education{
+        font-size: .75em;
+    }
+}
+
+@media only screen and (max-width: 785px){
+    #name{
+        font-size: 1em;
+    }
+    #title, #education{
+        font-size: .65em;
+    }
+}
+
+/*-----footer-index-----*/
+
+#footer-text{
+    margin-bottom: 0;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    text-align: center;
+    color: white;
+    font-family: 'HN Med';
+    font-size: 1em;
+}

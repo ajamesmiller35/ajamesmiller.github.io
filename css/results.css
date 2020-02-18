@@ -1,0 +1,224 @@
+/*-----base-results-----*/
+
+body{
+    background-color: #647456;
+}
+
+#body-results{
+    background-image: url('../images/f2-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1405px){
+    #body-results{
+        background-size: 1405px 937px;
+    }
+}
+
+#base-results{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#arch-results{
+    background-image: url('../images/arch.png');
+    background-size: 100% 100%;
+}
+
+#arch-results #slogan{
+    margin-bottom: 0;
+}
+
+#footer-results{
+    background-color: #647456;
+    height: 60px;
+}
+
+#footer-text{
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+.tt-normal{
+    font-family: 'HN Med';
+    font-size: 1.25em;
+    color: white;
+}
+
+.tt-small{
+    font-family: 'HN Med';
+    font-size: .9em;
+    color: white;
+}
+
+.cb-image{
+    height: 50px;
+}
+
+.cb-image2{
+    height: 40px;
+    padding-left: 5px;
+}
+
+.cb-image3{
+    transform: rotate(90deg);
+    height: 10%;
+    width: 5%;
+    position: absolute;
+    left: 45%;
+    bottom: 60px;
+    display: none;
+}
+
+@media only screen and (max-width: 1720px){
+    #title-box{
+        top: 15%;
+        left: 12.5%;
+    }
+}
+
+@media only screen and (max-width: 1520px){
+    #title-box{
+        top: 10%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1290px){
+    #title-box{
+        top: 8%;
+        left: 7.5%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #title-box{
+        width: 70%;
+        left: 15%;
+    }
+    #title-logo{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #title-box{
+        width: 80%;
+        left: 10%;
+    }
+    .tt-normal{
+        font-size: 1em;
+    }
+    .tt-small{
+        font-size: .75em;
+    }
+    .cb-image3{
+        display: unset;
+    }
+}
+
+@media only screen and (max-height: 750px){
+    #testimonials{
+        margin-bottom: 200px;
+    }
+    #base-results{
+        position: fixed;
+    }
+}
+
+/*-----testimonials-----*/
+
+#testimonials{
+    background-color: #524B48;
+    border-radius: 10px;
+    height: 420px;
+    width: 576px;
+    position: absolute;
+    right: -10px;
+    top: 30%;
+}
+
+@media only screen and (max-width: 1050px){
+    #testimonials{
+        top: 300px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    #testimonials{
+        /*width: 100%;
+        border-radius: unset;
+        right: 0;
+        top: 275px;
+        height: 375px;*/
+        height: 50%;
+        width: 100%;
+        right: 0;
+        top: 250px;
+    }
+    #body-results{
+        background-color: #524B48;
+        background-image: unset;
+    }
+}
+
+.your-class{
+    height: 100%;
+    width: 100%;
+    height: 67%;
+    overflow-y: scroll;
+}
+
+/*.prev{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.next{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+}*/
+
+.more{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'HN Bold';
+    color: #277289;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 575px){
+    .more{
+        font-size: 1.5em;
+    }
+}
+
+.your-class{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+@media only screen and (max-height: 670px){
+    #testimonials{
+        height: 45%;
+        top: 225px;
+    }
+}
+@media only screen and (max-height: 600px){
+    #testimonials{
+        height: 50%;
+        top: 200px;
+    }
+}
