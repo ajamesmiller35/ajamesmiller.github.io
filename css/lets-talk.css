@@ -21,6 +21,16 @@ body{
 
 .frp-white-tag{
     width: 100%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 575px){
+    .frp-white-tag{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 #left-col{
@@ -97,7 +107,8 @@ body{
     display: block;
     font-size: 2em;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     font-family: 'HN Med';
 }
 
