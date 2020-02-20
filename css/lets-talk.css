@@ -190,6 +190,11 @@ body{
     }
 }
 
+#contact-method-label{
+    display: inline;
+    margin-right: 20px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     color: #88817f;
