@@ -59,8 +59,8 @@ body{
     padding-top: 15px;
     text-align: center;
     color: white;
-    font-family: 'HN Med';
-    font-size: 1em;
+    font-size: 12pt;
+    font-family: 'HN Light';
 }
 
 #right-col-box{

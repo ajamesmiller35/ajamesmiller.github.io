@@ -51,6 +51,8 @@ body{
 #footer-text{
     padding-top: 15px;
     padding-bottom: 0;
+    font-size: 12pt;
+    font-family: 'HN Light';
 }
 
 .tt-normal{

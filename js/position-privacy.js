@@ -23,7 +23,7 @@ function position(){
         $('#nav-icon-tr').addClass('hidden');
     }
 
-    if($(window).width() > 1197 && $(window).height() < 890){
+    if($(window).width() > 1197 && $(window).height() < 950){
         $('#f3').css('width', '50%');
     }
     else{
