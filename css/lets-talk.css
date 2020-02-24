@@ -3,7 +3,7 @@ body{
 }
 
 #portrait{
-    width: 75%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -11,7 +11,7 @@ body{
 }
 
 .caption{
-    width: 75%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -44,7 +44,7 @@ body{
 
 #privacy-footer{
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: #647456;
     position: fixed;
     bottom: 0;
@@ -76,7 +76,6 @@ body{
 
 #address-box h6{
     margin-bottom: .25em;
-    font-family: 'HN Med';
     font-size: 1.25em;
 }
 

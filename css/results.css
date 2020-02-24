@@ -45,7 +45,7 @@ body{
 
 #footer-results{
     background-color: #647456;
-    height: 60px;
+    height: 50px;
 }
 
 #footer-text{
@@ -105,6 +105,7 @@ body{
     right: 10%;
     top: 30%;
     z-index: 2;
+    margin-bottom: 200px;
 }
 
 @media only screen and (max-width: 2050px){
@@ -184,9 +185,6 @@ body{
 }*/
 
 @media only screen and (max-height: 750px){
-    #testimonials{
-        margin-bottom: 200px;
-    }
     #base-results{
         position: fixed;
     }
