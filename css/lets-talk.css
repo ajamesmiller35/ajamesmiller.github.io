@@ -3,7 +3,7 @@ body{
 }
 
 #portrait{
-    width: 75%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -11,7 +11,7 @@ body{
 }
 
 .caption{
-    width: 75%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -21,6 +21,16 @@ body{
 
 .frp-white-tag{
     width: 100%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 575px){
+    .frp-white-tag{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 #left-col{
@@ -34,7 +44,7 @@ body{
 
 #privacy-footer{
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: #647456;
     position: fixed;
     bottom: 0;
@@ -49,8 +59,8 @@ body{
     padding-top: 15px;
     text-align: center;
     color: white;
-    font-family: 'HN Med';
-    font-size: 1em;
+    font-size: 12pt;
+    font-family: 'HN Light';
 }
 
 #right-col-box{
@@ -66,7 +76,6 @@ body{
 
 #address-box h6{
     margin-bottom: .25em;
-    font-family: 'HN Med';
     font-size: 1.25em;
 }
 
@@ -97,7 +106,8 @@ body{
     display: block;
     font-size: 2em;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     font-family: 'HN Med';
 }
 
@@ -177,6 +187,11 @@ body{
         font-size: 1.5em;
         padding: 5px 10px;
     }
+}
+
+#contact-method-label{
+    display: inline;
+    margin-right: 20px;
 }
 
 ::-webkit-scrollbar {

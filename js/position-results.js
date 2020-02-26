@@ -6,11 +6,37 @@ $(document).ready(function(){
         position();
     });
 
+    $('.next').click(function(){
+        $('.slick-list').scrollTop(0);
+        if($(window).width() > 575){
+            if($(window).height() < 740){
+                $('.slick-list').css('max-height', $(window).height() * .3);
+            }
+            else{
+                $('.slick-list').css('max-height', $(window).height() * .4);
+            }   
+        }
+        else{
+            $('.slick-list').css('max-height', 'unset');
+        }
+    });
+
+    setInterval(function(){
+        if($('.slick-active').height() <= $('.slick-list').height()){
+            $('html').addClass('hide-scrollbar');
+            $('.slick-list').addClass('sl-no-pad');
+        }
+        else{
+            $('html').removeClass('hide-scrollbar');
+            $('.slick-list').removeClass('sl-no-pad');
+        }
+    }, 100);
 
 });
 
 function position(){
     let sWidth = $(window).width();
+    let sHeight = $(window).height();
 
     //control nav icon visibility
     if(sWidth < 575){
@@ -50,6 +76,18 @@ function position(){
     }
     else{
         $('#body-results').css('background-image', `url('images/f2-dark.jpg')`);
+    }
+
+    if($(window).width() > 575){
+        if($(window).height() < 740){
+            $('.slick-list').css('max-height', $(window).height() * .3);
+        }
+        else{
+            $('.slick-list').css('max-height', $(window).height() * .4);
+        }   
+    }
+    else{
+        $('.slick-list').css('max-height', 'unset');
     }
 
     /*if( $('#nav-box').height() > $('#title-box').offset().top){
