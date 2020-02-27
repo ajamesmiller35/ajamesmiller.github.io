@@ -1,0 +1,280 @@
+/*-----base-results-----*/
+
+body{
+    background-color: #647456;
+}
+
+#body-results{
+    background-image: url('../images/f2-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#reverse-fade{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    z-index: 1;
+    opacity: .9;
+    background-image: url('../images/fade.png');
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 575px){
+    #reverse-fade{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1405px){
+    #body-results{
+        background-size: 1405px 937px;
+    }
+}
+
+#arch-results{
+    background-image: url('../images/arch.png');
+    background-size: 100% 100%;
+}
+
+#arch-results #slogan{
+    margin-bottom: 0;
+}
+
+#footer-results{
+    background-color: #647456;
+    height: 50px;
+}
+
+#footer-text{
+    padding-top: 15px;
+    padding-bottom: 0;
+    font-size: 12pt;
+    font-family: 'HN Light';
+}
+
+.tt-normal{
+    font-family: 'HN Med';
+    font-size: 1.25em;
+    color: white;
+    padding-left: 10px;
+}
+
+.cb-image{
+    height: 50px;
+}
+
+.cb-image2{
+    height: 40px;
+    padding-left: 5px;
+}
+
+.cb-image3{
+    transform: rotate(90deg);
+    height: 10%;
+    width: 5%;
+    position: absolute;
+    left: 45%;
+    bottom: 60px;
+    display: none;
+}
+
+#base-results{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+
+#title-box{
+    top: 250px;
+    left: 10%;
+}
+
+#testimonials{
+    background-color: #524B48;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    width: 600px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    z-index: 2;
+    margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 2050px){
+    #title-box{
+        top: 150px;
+    }
+}
+
+@media only screen and (max-width: 1405px){
+    #title-box{
+        top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1075px){
+    #title-box{
+        top: 75px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #title-box{
+        top: 75px;
+        width: 100%;
+        left: 0;
+    }
+    .title-logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 20px;
+    }
+    #testimonials{
+        width: 80%;
+    }
+}
+
+/*@media only screen and (max-width: 1520px){
+    #title-box{
+        top: 10%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1290px){
+    #title-box{
+        top: 8%;
+        left: 7.5%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #title-box{
+        width: 70%;
+        left: 15%;
+    }
+    .title-logo{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    #title-box{
+        width: 80%;
+        left: 10%;
+    }
+    .tt-normal{
+        font-size: 1em;
+    }
+    .tt-small{
+        font-size: .75em;
+    }
+    .cb-image3{
+        display: unset;
+    }
+}*/
+
+@media only screen and (max-height: 750px){
+    #base-results{
+        position: fixed;
+    }
+}
+
+@media only screen and (min-width: 575px){
+    .slick-list{
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #testimonials{
+        height: 70%;
+        width: 100%;
+        right: 0;
+        position: relative;
+        margin-bottom: 200px;
+    }
+    #body-results{
+        background-color: #524B48;
+        background-image: unset;
+    }
+}
+
+.your-class{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.slick-list{
+    padding-right: 5px;
+}
+
+.sl-no-pad{
+    padding-right: 0;
+}
+
+/*.prev{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.next{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+}*/
+
+.more{
+    width: 100%;
+    text-align: center;
+    font-family: 'HN Bold';
+    color: #277289;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 575px){
+    .more{
+        font-size: 1.5em;
+    }
+}
+
+
+::-webkit-scrollbar {
+    color: #88817f;
+    width: 5px;
+}
+
+.hide-scrollbar ::-webkit-scrollbar{
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+   background: rgba(255, 255, 255, .0); 
+}   
+
+::-webkit-scrollbar-thumb {
+   background: #88817f;
+   border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(255, 255, 255, .0); 
+}
+
+.block{
+    display: block;
+}
