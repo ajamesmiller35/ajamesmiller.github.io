@@ -188,7 +188,7 @@ body{
 }
 
 @media only screen and (min-width: 575px){
-    #testimonials{
+    .slick-list{
         overflow-y: scroll;
     }
 }
@@ -216,7 +216,6 @@ body{
 }
 
 .slick-list{
-    overflow-y: scroll;
     padding-right: 5px;
 }
 
